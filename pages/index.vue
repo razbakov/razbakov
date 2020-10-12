@@ -1,6 +1,6 @@
 <template>
   <div class="flex-grow flex justify-center items-center">
-    <div class="md:flex px-8">
+    <div class="md:flex">
       <div>
         <img
           class="w-32 md:w-64 rounded-full"

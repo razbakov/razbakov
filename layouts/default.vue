@@ -46,7 +46,7 @@
       </nav>
     </header>
 
-    <div class="container mx-auto max-w-2xl flex-grow flex flex-col">
+    <div class="container mx-auto max-w-2xl px-8 flex-grow flex flex-col">
       <nuxt-child />
     </div>
 
