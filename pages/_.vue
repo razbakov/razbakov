@@ -1,8 +1,8 @@
 <template>
-  <NuxtContent
-    class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
-    :document="page"
-  />
+  <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+    <h1 v-if="page.title">{{ page.title }}</h1>
+    <NuxtContent :document="page" />
+  </div>
 </template>
 
 <script>

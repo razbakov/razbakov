@@ -73,15 +73,15 @@ export default {
     page: 1,
     pageCount: 1,
   }),
-  methods: {
-    time(val) {
-      return format(new Date(val), 'do MMMM yyyy')
-    },
-  },
   watch: {
     async $route() {
       this.page = parseInt(this.$route.query.page || '1') || 1
       this.posts = await pagination.getPostsOfPage(this.$content, this.page)
+    },
+  },
+  methods: {
+    time(val) {
+      return format(new Date(val), 'do MMMM yyyy')
     },
   },
 }

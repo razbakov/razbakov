@@ -1,20 +1,15 @@
 <template>
   <div
     id="global-layout"
-    class="font-sans leading-normal tracking-normal antialiased"
+    class="font-sans leading-normal tracking-normal antialiased flex flex-col min-h-screen"
   >
     <header>
       <nav class="flex items-center justify-between flex-wrap p-6">
         <div class="flex mb-4">
-          <img
-            class="w-16 h-16 rounded-full mr-4"
-            src="/img/AlekseyRazbakov.jpg"
-            alt="Aleksey Razbakov"
-          />
           <div>
             <router-link
               to="/"
-              class="no-underline leading-none hover:no-underline text-4xl"
+              class="no-underline leading-none hover:no-underline text-3xl"
             >
               {{ site.title }}
             </router-link>
@@ -43,7 +38,7 @@
         </div>
         <ul class="flex">
           <li v-for="item in nav" :key="item.link">
-            <router-link class="px-4 py-2" :to="item.link" exact>{{
+            <router-link class="px-4 py-2 font-bold" :to="item.link" exact>{{
               item.text
             }}</router-link>
           </li>
@@ -51,7 +46,7 @@
       </nav>
     </header>
 
-    <div class="container mx-auto max-w-2xl">
+    <div class="container mx-auto max-w-2xl flex-grow flex flex-col">
       <nuxt-child />
     </div>
 
@@ -69,11 +64,17 @@ export default {
     nav: [
       { text: 'Hi', link: '/' },
       { text: 'Blog', link: '/blog' },
-      { text: 'Portfolio', link: '/projects/' },
-      { text: 'Gear', link: '/gear/' },
-      { text: 'About', link: '/about/' },
+      { text: 'Portfolio', link: '/projects' },
+      { text: 'Gear', link: '/gear' },
+      { text: 'About', link: '/about' },
       // { text: 'Contact', link: '/contact/' },
     ],
   }),
 }
 </script>
+
+<style>
+nav ul .nuxt-link-exact-active {
+  @apply .text-orange-500;
+}
+</style>
