@@ -1,55 +1,79 @@
 <template>
-  <div>
-    <Nuxt />
+  <div
+    id="global-layout"
+    class="font-sans leading-normal tracking-normal antialiased"
+  >
+    <header>
+      <nav class="flex items-center justify-between flex-wrap p-6">
+        <div class="flex mb-4">
+          <img
+            class="w-16 h-16 rounded-full mr-4"
+            src="/img/AlekseyRazbakov.jpg"
+            alt="Aleksey Razbakov"
+          />
+          <div>
+            <router-link
+              to="/"
+              class="no-underline leading-none hover:no-underline text-4xl"
+            >
+              {{ site.title }}
+            </router-link>
+            <div class="flex">
+              <p>{{ site.description }}</p>
+              <a
+                class="ml-2 mt-1 w-4 h-4"
+                href="https://twitter.com/razbakov"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="fill-current hover:text-blue-500"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Twitter</title>
+                  <path
+                    d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <ul class="flex">
+          <li v-for="item in nav" :key="item.link">
+            <router-link class="px-4 py-2" :to="item.link" exact>{{
+              item.text
+            }}</router-link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container mx-auto max-w-2xl">
+      <nuxt-child />
+    </div>
+
+    <footer></footer>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+export default {
+  data: () => ({
+    site: {
+      title: 'Aleksey Razbakov',
+      description: 'Web Developer',
+    },
+    nav: [
+      { text: 'Hi', link: '/' },
+      { text: 'Blog', link: '/blog' },
+      { text: 'Portfolio', link: '/projects/' },
+      { text: 'Gear', link: '/gear/' },
+      { text: 'About', link: '/about/' },
+      // { text: 'Contact', link: '/contact/' },
+    ],
+  }),
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>
