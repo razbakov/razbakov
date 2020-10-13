@@ -21,7 +21,7 @@ Write down a [SMART goal](https://en.wikipedia.org/wiki/SMART_criteria) and brea
 
 During a year use declaration technique to set all your long-, mid-, short term goals (2 of each one). Stay focused on relevant thing throughout the time period. Don’t over stress yourself.
 
-Join any online challenge and language marathon. Join [TheGame](/the-game) to compete with yourself and get inspired by likeminded people.
+Join any online challenge and language marathon.
 
 ## Action
 
@@ -32,6 +32,7 @@ Once language goal appears in your horizon stick to it and do some activities ev
 Any language is not about words and rules. It is about culture and history of people who speaks and develops this language.
 
 Every time you work with a foreign text do the following:
+
 - read it
 - hear it
 - say it
@@ -45,40 +46,53 @@ Every time you work with a foreign text do the following:
 ## List of activities to improve the language
 
 ### Vocabulary
+
 Translate and learn by heart translations of the most popular words and sentences you use in your native language. You can use some apps to find those words from chat history from your social networks. Research idioms of the language and try to find corresponding sayings with similar meaning.
 
 ### Songs
+
 Read, translate, understand, research, learn by heart, sing.
 
 ### Radio
+
 Listen, write down words, research. Do it every morning. You can find podcasts with text transcription nearly about any topic.
 
 ### Articles and Books
+
 Read, mark the words, write down your ideas, write down highlights, research the words and history.
 
 ### Youtuber
+
 Find interesting topics for you, watch with popular youtubers with subtitles, comment.
 
 ### Movies, TV Shows, Cinema
+
 Watch originals with subtitles, research words, note it down. Try to repeat some sentences.
 
 ### Twitter, Instagram, Facebook
+
 Find native speakers or friends of your friends who live abroad to get in contact with people who speaks your desired language. Comment on their posts.
 
 ### Friends
+
 Talk to friends who also learn that language, analyze their language, research, correct each other, discuss difficulties.
 
 ### Broadcast yourself
+
 Start your broadcast (videos or posts). You can start your own YouTube channel in the language you are learning about the things you know good.
 
 ### Events
-Visit conferences, workshops, meetups. 
+
+Visit conferences, workshops, meetups.
 
 ### Public speaking
+
 Learn public speaking (toastmasters). Practice and give a talk at some event.
 
 ### Tandem
+
 Make friends with native speakers, make tandem to help them learn your mother tongue. Ask them to correct you. Try to copycat, mimic them. Use their phrases, tone, behavior.
 
 ### Teacher
+
 Find a native-speaking teacher. Last two you can find at [italki](https://italki.com)
