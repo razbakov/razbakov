@@ -10,16 +10,30 @@ export default {
   async asyncData({ $content, params, error }) {
     const slug = params.pathMatch || 'index'
 
-    let page = {}
-
     try {
-      page = await $content(slug).fetch()
+      const page = await $content(slug).fetch()
+
+      return { page }
     } catch (e) {
       error({ statusCode: 404, message: 'Page not found' })
     }
-
+  },
+  head() {
     return {
-      page,
+      title: this.page.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description,
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: process.env.site.url + this.page.dir,
+        },
+      ],
     }
   },
 }
